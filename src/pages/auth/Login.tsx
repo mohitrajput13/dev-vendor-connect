@@ -40,38 +40,38 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-navy-900 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md bg-navy-950 border-navy-800">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center p-4">
+      <Card className="w-full max-w-md bg-white border-gray-200 shadow-xl">
+        <CardHeader className="text-center space-y-2">
+          <CardTitle className="text-2xl font-bold text-gray-800">
             Staff Augmentation Portal
           </CardTitle>
-          <p className="text-gray-400">Sign in to your account</p>
+          <p className="text-gray-600">Sign in to your account</p>
         </CardHeader>
         
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <Label htmlFor="email" className="text-white">Email</Label>
+              <Label htmlFor="email" className="text-gray-700">Email</Label>
               <Input
                 id="email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-navy-800 border-navy-700 text-white"
+                className="bg-white border-gray-300 text-gray-800"
                 placeholder="Enter your email"
                 required
               />
             </div>
             
             <div>
-              <Label htmlFor="password" className="text-white">Password</Label>
+              <Label htmlFor="password" className="text-gray-700">Password</Label>
               <Input
                 id="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="bg-navy-800 border-navy-700 text-white"
+                className="bg-white border-gray-300 text-gray-800"
                 placeholder="Enter your password"
                 required
               />
@@ -87,7 +87,7 @@ const Login: React.FC = () => {
           </form>
           
           <div className="mt-6 text-center">
-            <p className="text-gray-400">
+            <p className="text-gray-600">
               Demo credentials:
             </p>
             <p className="text-sm text-gray-500 mt-1">
@@ -99,7 +99,7 @@ const Login: React.FC = () => {
           </div>
           
           <div className="mt-4 text-center">
-            <Link to="/signup" className="text-blue-400 hover:text-blue-300">
+            <Link to="/signup" className="text-blue-600 hover:text-blue-500">
               Don't have an account? Sign up
             </Link>
           </div>

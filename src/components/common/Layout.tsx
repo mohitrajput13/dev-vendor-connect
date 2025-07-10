@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   if (!user) return null;
 
   return (
-    <div className="flex h-screen bg-navy-900">
+    <div className="flex h-screen bg-gray-50">
       <Sidebar role={user.role} />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Topbar />
