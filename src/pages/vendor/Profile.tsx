@@ -28,14 +28,14 @@ const VendorProfile: React.FC = () => {
     <Layout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">Company Profile</h1>
-          <p className="text-gray-400">Manage your company information and settings</p>
+          <h1 className="text-2xl font-bold text-gray-800">Company Profile</h1>
+          <p className="text-gray-600">Manage your company information and settings</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card className="bg-navy-800 border-navy-700">
+          <Card className="bg-white border-gray-200">
             <CardHeader>
-              <CardTitle className="text-white">Company Information</CardTitle>
+              <CardTitle className="text-gray-800">Company Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
@@ -50,51 +50,51 @@ const VendorProfile: React.FC = () => {
               
               <div className="grid grid-cols-1 gap-4">
                 <div>
-                  <Label className="text-white">Company Name</Label>
+                  <Label className="text-gray-700">Company Name</Label>
                   <Input
                     value={formData.companyName}
                     onChange={(e) => setFormData({...formData, companyName: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Email</Label>
+                  <Label className="text-gray-700">Email</Label>
                   <Input
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Phone</Label>
+                  <Label className="text-gray-700">Phone</Label>
                   <Input
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Address</Label>
+                  <Label className="text-gray-700">Address</Label>
                   <Input
                     value={formData.address}
                     onChange={(e) => setFormData({...formData, address: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Company Description</Label>
+                  <Label className="text-gray-700">Company Description</Label>
                   <Textarea
                     value={formData.description}
                     onChange={(e) => setFormData({...formData, description: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
@@ -118,49 +118,49 @@ const VendorProfile: React.FC = () => {
           </Card>
           
           <div className="space-y-6">
-            <Card className="bg-navy-800 border-navy-700">
+            <Card className="bg-white border-gray-200">
               <CardHeader>
-                <CardTitle className="text-white">Quick Stats</CardTitle>
+                <CardTitle className="text-gray-800">Quick Stats</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-3 bg-navy-700 rounded-lg">
-                    <div className="text-2xl font-bold text-white">12</div>
-                    <div className="text-sm text-gray-400">Developers</div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <div className="text-2xl font-bold text-gray-800">12</div>
+                    <div className="text-sm text-gray-600">Developers</div>
                   </div>
-                  <div className="text-center p-3 bg-navy-700 rounded-lg">
-                    <div className="text-2xl font-bold text-white">8</div>
-                    <div className="text-sm text-gray-400">Available</div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <div className="text-2xl font-bold text-gray-800">8</div>
+                    <div className="text-sm text-gray-600">Available</div>
                   </div>
-                  <div className="text-center p-3 bg-navy-700 rounded-lg">
-                    <div className="text-2xl font-bold text-white">24</div>
-                    <div className="text-sm text-gray-400">Projects</div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <div className="text-2xl font-bold text-gray-800">24</div>
+                    <div className="text-sm text-gray-600">Projects</div>
                   </div>
-                  <div className="text-center p-3 bg-navy-700 rounded-lg">
-                    <div className="text-2xl font-bold text-white">98%</div>
-                    <div className="text-sm text-gray-400">Success Rate</div>
+                  <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <div className="text-2xl font-bold text-gray-800">98%</div>
+                    <div className="text-sm text-gray-600">Success Rate</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
             
-            <Card className="bg-navy-800 border-navy-700">
+            <Card className="bg-white border-gray-200">
               <CardHeader>
-                <CardTitle className="text-white">Account Status</CardTitle>
+                <CardTitle className="text-gray-800">Account Status</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">Verification Status</span>
-                    <span className="text-green-400">Verified</span>
+                    <span className="text-gray-700">Verification Status</span>
+                    <span className="text-green-600">Verified</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">Member Since</span>
-                    <span className="text-gray-400">January 2024</span>
+                    <span className="text-gray-700">Member Since</span>
+                    <span className="text-gray-600">January 2024</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-300">Plan</span>
-                    <span className="text-blue-400">Premium</span>
+                    <span className="text-gray-700">Plan</span>
+                    <span className="text-blue-600">Premium</span>
                   </div>
                 </div>
               </CardContent>
