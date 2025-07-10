@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Layout from '@/components/common/Layout';
@@ -28,7 +27,8 @@ const DeveloperDetail: React.FC = () => {
       { name: 'Healthcare App', duration: '4 months', role: 'Frontend Developer' },
       { name: 'Financial Dashboard', duration: '3 months', role: 'Full-stack Developer' }
     ],
-    joinDate: '2023-06-15'
+    joinDate: '2023-06-15',
+    avatar: undefined // Added missing avatar property
   };
 
   const getAvailabilityColor = (status: string) => {
