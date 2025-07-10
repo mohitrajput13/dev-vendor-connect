@@ -56,7 +56,6 @@
   }
   body {
     @apply bg-navy-900 text-white font-inter;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
