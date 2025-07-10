@@ -15,12 +15,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose} />
-      <div className="relative bg-navy-950 rounded-lg shadow-xl max-w-md w-full mx-4 border border-navy-800">
-        <div className="flex items-center justify-between p-4 border-b border-navy-800">
-          <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full mx-4 border border-gray-200">
+        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+          <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white"
+            className="text-gray-400 hover:text-gray-600"
           >
             <X className="h-5 w-5" />
           </button>

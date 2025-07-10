@@ -38,9 +38,9 @@ const Sidebar: React.FC<SidebarProps> = ({ role }) => {
   const navItems = role === 'admin' ? adminNavItems : vendorNavItems;
 
   return (
-    <div className="w-64 bg-navy-950 border-r border-navy-800 min-h-screen">
+    <div className="w-64 sidebar-light min-h-screen">
       <div className="p-6">
-        <h2 className="text-xl font-bold text-white">
+        <h2 className="text-xl font-bold text-gray-800">
           {role === 'admin' ? 'Admin Portal' : 'Vendor Portal'}
         </h2>
       </div>

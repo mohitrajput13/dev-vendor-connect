@@ -29,19 +29,19 @@ const Index: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-navy-900">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-navy-950 border-b border-navy-800">
+      <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-gray-800">
                 Staff Augmentation Portal
               </h1>
             </div>
             <div className="flex space-x-4">
               <Link to="/login">
-                <Button variant="outline" className="text-white border-gray-600 hover:bg-navy-800">
+                <Button variant="outline" className="text-gray-600 border-gray-300 hover:bg-gray-50">
                   Login
                 </Button>
               </Link>
@@ -58,12 +58,12 @@ const Index: React.FC = () => {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
             Streamline Your
-            <span className="text-blue-400"> Developer </span>
+            <span className="text-blue-500"> Developer </span>
             Management
           </h2>
-          <p className="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             A comprehensive platform for managing multiple software vendors, their developer teams, 
             and project assignments with role-based access and real-time tracking.
           </p>
@@ -74,7 +74,7 @@ const Index: React.FC = () => {
               </Button>
             </Link>
             <Link to="/login">
-              <Button variant="outline" size="lg" className="w-full sm:w-auto text-white border-gray-600 hover:bg-navy-800">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto text-gray-600 border-gray-300 hover:bg-gray-50">
                 Login to Portal
               </Button>
             </Link>
@@ -83,13 +83,13 @@ const Index: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-navy-950">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold text-gray-800 mb-4">
               Powerful Features
             </h3>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Everything you need to manage your development teams effectively
             </p>
           </div>
@@ -98,14 +98,14 @@ const Index: React.FC = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div key={index} className="text-center p-6 bg-navy-900 rounded-lg border border-navy-800 hover:border-navy-700 transition-colors">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mb-4">
+                <div key={index} className="text-center p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-500 rounded-lg mb-4">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
                     {feature.title}
                   </h4>
-                  <p className="text-gray-400">
+                  <p className="text-gray-600">
                     {feature.description}
                   </p>
                 </div>
@@ -118,10 +118,10 @@ const Index: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl font-bold text-white mb-4">
+          <h3 className="text-3xl font-bold text-gray-800 mb-4">
             Ready to get started?
           </h3>
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-600 mb-8">
             Join our platform and streamline your developer management today.
           </p>
           <Link to="/signup">
@@ -133,9 +133,9 @@ const Index: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-navy-950 border-t border-navy-800 py-8">
+      <footer className="bg-white border-t border-gray-200 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-gray-400">
+          <div className="text-center text-gray-500">
             <p>&copy; 2024 Staff Augmentation Portal. All rights reserved.</p>
           </div>
         </div>
