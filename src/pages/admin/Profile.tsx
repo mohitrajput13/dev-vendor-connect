@@ -27,14 +27,14 @@ const AdminProfile: React.FC = () => {
     <Layout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">Admin Profile</h1>
-          <p className="text-gray-400">Manage your account settings and preferences</p>
+          <h1 className="text-2xl font-bold text-gray-800">Admin Profile</h1>
+          <p className="text-gray-600">Manage your account settings and preferences</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card className="bg-navy-800 border-navy-700">
+          <Card className="bg-white border-gray-200 shadow-sm">
             <CardHeader>
-              <CardTitle className="text-white">Profile Information</CardTitle>
+              <CardTitle className="text-gray-800">Profile Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-4">
@@ -49,41 +49,41 @@ const AdminProfile: React.FC = () => {
               
               <div className="grid grid-cols-1 gap-4">
                 <div>
-                  <Label className="text-white">Full Name</Label>
+                  <Label className="text-gray-700">Full Name</Label>
                   <Input
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Email</Label>
+                  <Label className="text-gray-700">Email</Label>
                   <Input
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Phone</Label>
+                  <Label className="text-gray-700">Phone</Label>
                   <Input
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
                 
                 <div>
-                  <Label className="text-white">Department</Label>
+                  <Label className="text-gray-700">Department</Label>
                   <Input
                     value={formData.department}
                     onChange={(e) => setFormData({...formData, department: e.target.value})}
-                    className="bg-navy-700 border-navy-600 text-white"
+                    className="bg-white border-gray-300 text-gray-800"
                     disabled={!isEditing}
                   />
                 </div>
@@ -106,32 +106,32 @@ const AdminProfile: React.FC = () => {
             </CardContent>
           </Card>
           
-          <Card className="bg-navy-800 border-navy-700">
+          <Card className="bg-white border-gray-200 shadow-sm">
             <CardHeader>
-              <CardTitle className="text-white">Account Settings</CardTitle>
+              <CardTitle className="text-gray-800">Account Settings</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
-                <div className="flex items-center justify-between p-3 bg-navy-700 rounded-lg">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
                   <div>
-                    <p className="text-white font-medium">Two-Factor Authentication</p>
-                    <p className="text-gray-400 text-sm">Add extra security to your account</p>
+                    <p className="text-gray-800 font-medium">Two-Factor Authentication</p>
+                    <p className="text-gray-600 text-sm">Add extra security to your account</p>
                   </div>
                   <Button variant="outline" size="sm">Enable</Button>
                 </div>
                 
-                <div className="flex items-center justify-between p-3 bg-navy-700 rounded-lg">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
                   <div>
-                    <p className="text-white font-medium">Email Notifications</p>
-                    <p className="text-gray-400 text-sm">Receive updates about platform activity</p>
+                    <p className="text-gray-800 font-medium">Email Notifications</p>
+                    <p className="text-gray-600 text-sm">Receive updates about platform activity</p>
                   </div>
                   <Button variant="outline" size="sm">Configure</Button>
                 </div>
                 
-                <div className="flex items-center justify-between p-3 bg-navy-700 rounded-lg">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
                   <div>
-                    <p className="text-white font-medium">Change Password</p>
-                    <p className="text-gray-400 text-sm">Update your login password</p>
+                    <p className="text-gray-800 font-medium">Change Password</p>
+                    <p className="text-gray-600 text-sm">Update your login password</p>
                   </div>
                   <Button variant="outline" size="sm">Change</Button>
                 </div>

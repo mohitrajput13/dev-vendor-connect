@@ -31,27 +31,27 @@ const AdminApprovals: React.FC = () => {
     <Layout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">Pending Approvals</h1>
-          <p className="text-gray-400">Review and approve vendor and developer registrations</p>
+          <h1 className="text-2xl font-bold text-gray-800">Pending Approvals</h1>
+          <p className="text-gray-600">Review and approve vendor and developer registrations</p>
         </div>
 
         <div className="space-y-4">
           {pendingApprovals.map((item) => (
-            <Card key={item.id} className="bg-navy-800 border-navy-700">
+            <Card key={item.id} className="bg-white border-gray-200 shadow-sm">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     {item.type === 'vendor' ? (
-                      <Building2 className="h-5 w-5 text-blue-400" />
+                      <Building2 className="h-5 w-5 text-blue-600" />
                     ) : (
-                      <User className="h-5 w-5 text-green-400" />
+                      <User className="h-5 w-5 text-green-600" />
                     )}
                     <div>
-                      <CardTitle className="text-white">{item.name}</CardTitle>
-                      <p className="text-gray-400 text-sm">{item.email}</p>
+                      <CardTitle className="text-gray-800">{item.name}</CardTitle>
+                      <p className="text-gray-600 text-sm">{item.email}</p>
                     </div>
                   </div>
-                  <Badge variant="outline" className="text-yellow-400 border-yellow-400">
+                  <Badge variant="outline" className="text-orange-600 border-orange-300 bg-orange-50">
                     {item.type}
                   </Badge>
                 </div>
@@ -59,9 +59,9 @@ const AdminApprovals: React.FC = () => {
               
               <CardContent>
                 <div className="space-y-4">
-                  <p className="text-gray-300">{item.details}</p>
+                  <p className="text-gray-700">{item.details}</p>
                   {item.type === 'developer' && (
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm text-gray-600">
                       Vendor: {item.vendor}
                     </p>
                   )}

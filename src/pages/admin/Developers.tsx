@@ -46,15 +46,15 @@ const AdminDevelopers: React.FC = () => {
     <Layout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">All Developers</h1>
-          <p className="text-gray-400">View and manage developers across all vendors</p>
+          <h1 className="text-2xl font-bold text-gray-800">All Developers</h1>
+          <p className="text-gray-600">View and manage developers across all vendors</p>
         </div>
 
         <Input
           placeholder="Search developers by name or skills..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="bg-navy-800 border-navy-700 text-white max-w-md"
+          className="bg-white border-gray-300 text-gray-800 max-w-md"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
