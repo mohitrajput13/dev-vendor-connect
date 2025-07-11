@@ -61,9 +61,9 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md bg-white border-gray-200 shadow-lg">
-        <CardHeader className="text-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center p-4">
+      <Card className="w-full max-w-md bg-white border-gray-200 shadow-xl">
+        <CardHeader className="text-center space-y-2">
           <CardTitle className="text-2xl font-bold text-gray-800">
             Vendor Registration
           </CardTitle>
